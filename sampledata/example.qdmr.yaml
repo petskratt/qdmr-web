@@ -1,0 +1,68 @@
+settings:
+  micLevel: 6
+  speech: false
+  introLine1: qDMR
+  introLine2: DM3MAT
+  defaultID: id1
+  squelch: 1
+  power: High
+radioIDs:
+  - dmr: {id: id1, name: DM3MAT, number: 2621370}
+contacts:
+  - dmr: {id: ww, name: WW, type: GroupCall, number: 91}
+  - dmr: {id: cont24, name: DM3MAT Hannes, type: PrivateCall, ring: true, number: 2621370}
+  - dtmf: {id: dtmf1, name: DTMF example, number: "#123*"}
+groupLists:
+  - id: grp2
+    name: Berlin
+    contacts: [ww, cont24]
+channels:
+  - digital:
+      id: ch5
+      name: BB DB0LDS TS2
+      rxFrequency: 439.5625
+      txFrequency: 431.9625
+      power: High
+      timeout: 0
+      rxOnly: false
+      vox: !default
+      scanList: scan1
+      admit: ColorCode
+      colorCode: 1
+      timeSlot: TS2
+      groupList: grp2
+      contact: ww
+      radioID: !default
+      roaming: !default
+      wdmrTag: [favorite, berlin]
+      openGD77:
+        scanZoneSkip: false
+        beep: true
+  - analog:
+      id: ch76
+      name: DB0LDS
+      rxFrequency: 439.5625
+      txFrequency: 431.9625
+      power: High
+      admit: Always
+      bandwidth: Narrow
+      rxTone: {ctcss: 67}
+      txTone: {ctcss: 67}
+zones:
+  - id: zone1
+    name: KW
+    A: [ch5, ch76]
+scanLists:
+  - id: scan1
+    name: KW
+    primary: !selected
+    channels: [ch5, ch76]
+roamingChannels:
+  - id: rch1
+    name: R DB0LDS
+    rxFrequency: 439.5625
+    txFrequency: 431.9625
+roamingZones:
+  - id: roam1
+    name: Berlin/Brand
+    channels: [rch1]

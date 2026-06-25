@@ -1,0 +1,201 @@
+// Bootstrap theming. Override variables BEFORE the import.
+$primary: #4f8cff;
+
+@import 'bootstrap/scss/bootstrap';
+
+:root {
+	--qdmr-tabbar-h: 2.5rem;
+	--qdmr-sidebar-w: 13rem;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.app-shell {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	overflow: hidden;
+}
+
+// ── Dataset tabs (horizontal) ────────────────────────────────────────────────
+.dataset-tabbar {
+	display: flex;
+	align-items: stretch;
+	gap: 2px;
+	padding: 0 0.5rem;
+	background: var(--bs-tertiary-bg);
+	border-bottom: 1px solid var(--bs-border-color);
+	overflow-x: auto;
+	min-height: var(--qdmr-tabbar-h);
+}
+
+.dataset-tab {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	padding: 0.25rem 0.75rem;
+	border: 1px solid transparent;
+	border-bottom: none;
+	border-radius: 0.375rem 0.375rem 0 0;
+	background: transparent;
+	color: var(--bs-secondary-color);
+	white-space: nowrap;
+	cursor: pointer;
+
+	&:hover {
+		background: var(--bs-secondary-bg);
+		color: var(--bs-body-color);
+	}
+
+	&.active {
+		background: var(--bs-body-bg);
+		color: var(--bs-body-color);
+		border-color: var(--bs-border-color);
+	}
+}
+
+.dataset-tab-label {
+	border: none;
+	background: transparent;
+	color: inherit;
+	font: inherit;
+	padding: 0;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+}
+
+.dataset-tab-close {
+	border: none;
+	background: transparent;
+	color: inherit;
+	line-height: 1;
+	opacity: 0.6;
+	padding: 0 0.1rem;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+// ── Workspace (sidebar + content) ────────────────────────────────────────────
+.workspace {
+	display: flex;
+	flex: 1 1 auto;
+	min-height: 0;
+}
+
+.entity-sidebar {
+	width: var(--qdmr-sidebar-w);
+	flex: 0 0 auto;
+	overflow-y: auto;
+	border-right: 1px solid var(--bs-border-color);
+	background: var(--bs-tertiary-bg);
+	padding: 0.5rem 0;
+}
+
+.entity-link {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5rem;
+	width: 100%;
+	padding: 0.35rem 0.85rem;
+	border: none;
+	background: transparent;
+	color: var(--bs-secondary-color);
+	text-align: left;
+	cursor: pointer;
+
+	&:hover {
+		background: var(--bs-secondary-bg);
+		color: var(--bs-body-color);
+	}
+
+	&.active {
+		background: var(--bs-primary-bg-subtle);
+		color: var(--bs-emphasis-color);
+		font-weight: 600;
+	}
+}
+
+.entity-count {
+	font-size: 0.75rem;
+	color: var(--bs-secondary-color);
+}
+
+.entity-content {
+	flex: 1 1 auto;
+	min-width: 0;
+	overflow: auto;
+	padding: 1rem;
+}
+
+// ── Simple modal (no Bootstrap JS) ───────────────────────────────────────────
+.qdmr-modal-backdrop {
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.55);
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 3rem 1rem;
+	z-index: 1050;
+	overflow-y: auto;
+}
+
+.qdmr-modal {
+	background: var(--bs-body-bg);
+	border: 1px solid var(--bs-border-color);
+	border-radius: 0.5rem;
+	width: min(48rem, 100%);
+	max-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.qdmr-modal-header,
+.qdmr-modal-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5rem;
+	padding: 0.75rem 1rem;
+}
+
+.qdmr-modal-header {
+	border-bottom: 1px solid var(--bs-border-color);
+}
+
+.qdmr-modal-footer {
+	border-top: 1px solid var(--bs-border-color);
+}
+
+.qdmr-modal-body {
+	padding: 1rem;
+	overflow-y: auto;
+}
+
+.field-row {
+	display: grid;
+	grid-template-columns: 10rem 6rem 1fr auto;
+	gap: 0.5rem;
+	align-items: start;
+	margin-bottom: 0.5rem;
+}
+
+.empty-state {
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	color: var(--bs-secondary-color);
+	text-align: center;
+}

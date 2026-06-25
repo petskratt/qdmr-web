@@ -1,0 +1,199 @@
+{
+	"generatedFrom": {
+		"repo": "hmatuschek/qdmr",
+		"tag": "v0.15.1"
+	},
+	"generatedAt": "2026-06-25T15:34:11.733Z",
+	"count": 27,
+	"radios": [
+		{
+			"key": "d578uv2",
+			"name": "d578uv2",
+			"manufacturer": "",
+			"enum": "D578UVII",
+			"aliasOf": "d578uv"
+		},
+		{
+			"key": "md380",
+			"name": "md380",
+			"manufacturer": "",
+			"enum": "MD380",
+			"aliasOf": "md390"
+		},
+		{
+			"key": "d168uv",
+			"name": "AT-D168UV",
+			"manufacturer": "AnyTone",
+			"enum": "D168UV",
+			"aliasOf": null
+		},
+		{
+			"key": "d578uv",
+			"name": "AT-D578UV",
+			"manufacturer": "AnyTone",
+			"enum": "D578UV",
+			"aliasOf": null
+		},
+		{
+			"key": "d868uv",
+			"name": "AT-D868UV",
+			"manufacturer": "AnyTone",
+			"enum": "D868UV",
+			"aliasOf": "d868uve"
+		},
+		{
+			"key": "d868uve",
+			"name": "AT-D868UVE",
+			"manufacturer": "AnyTone",
+			"enum": "D868UVE",
+			"aliasOf": null
+		},
+		{
+			"key": "d878uv",
+			"name": "AT-D878UV",
+			"manufacturer": "AnyTone",
+			"enum": "D878UV",
+			"aliasOf": null
+		},
+		{
+			"key": "d878uv2",
+			"name": "AT-D878UVII",
+			"manufacturer": "AnyTone",
+			"enum": "D878UVII",
+			"aliasOf": null
+		},
+		{
+			"key": "dm1701",
+			"name": "DM-1701",
+			"manufacturer": "Baofeng",
+			"enum": "DM1701",
+			"aliasOf": null
+		},
+		{
+			"key": "dm32uv",
+			"name": "DM-32UV",
+			"manufacturer": "Baofeng",
+			"enum": "DM32UV",
+			"aliasOf": null
+		},
+		{
+			"key": "dr1801uv",
+			"name": "DR-1801UV",
+			"manufacturer": "Baofeng",
+			"enum": "DR1801UV",
+			"aliasOf": null
+		},
+		{
+			"key": "dmr6x2uv",
+			"name": "DMR-6X2UV",
+			"manufacturer": "BTECH",
+			"enum": "DMR6X2UV",
+			"aliasOf": null
+		},
+		{
+			"key": "dmr6x2uv2",
+			"name": "DMR-6X2UV PRO",
+			"manufacturer": "BTECH",
+			"enum": "DMR6X2UV2",
+			"aliasOf": null
+		},
+		{
+			"key": "opengd77",
+			"name": "OpenGD77",
+			"manufacturer": "OpenGD77 Project",
+			"enum": "OpenGD77",
+			"aliasOf": null
+		},
+		{
+			"key": "openuv380",
+			"name": "OpenMDUV380",
+			"manufacturer": "OpenGD77 Project",
+			"enum": "OpenUV380",
+			"aliasOf": null
+		},
+		{
+			"key": "openrtx",
+			"name": "openrtx",
+			"manufacturer": "OpenRTX",
+			"enum": "OpenRTX",
+			"aliasOf": null
+		},
+		{
+			"key": "gd73",
+			"name": "GD-73",
+			"manufacturer": "Radioddity",
+			"enum": "GD73",
+			"aliasOf": null
+		},
+		{
+			"key": "gd77",
+			"name": "GD-77",
+			"manufacturer": "Radioddity",
+			"enum": "GD77",
+			"aliasOf": null
+		},
+		{
+			"key": "rd5r",
+			"name": "RD-5R",
+			"manufacturer": "Radioddity",
+			"enum": "RD5R",
+			"aliasOf": null
+		},
+		{
+			"key": "rt3s",
+			"name": "RT3S",
+			"manufacturer": "Retevis",
+			"enum": "RT3S",
+			"aliasOf": "uv390"
+		},
+		{
+			"key": "rt8",
+			"name": "RT8",
+			"manufacturer": "Retevis",
+			"enum": "RT8",
+			"aliasOf": "md390"
+		},
+		{
+			"key": "rt82",
+			"name": "RT82",
+			"manufacturer": "Retevis",
+			"enum": "RT82",
+			"aliasOf": "md2017"
+		},
+		{
+			"key": "rt84",
+			"name": "RT84",
+			"manufacturer": "Retevis",
+			"enum": "RT84",
+			"aliasOf": "dm1701"
+		},
+		{
+			"key": "md2017",
+			"name": "MD-2017",
+			"manufacturer": "TyT",
+			"enum": "MD2017",
+			"aliasOf": null
+		},
+		{
+			"key": "md390",
+			"name": "MD-390",
+			"manufacturer": "TyT",
+			"enum": "MD390",
+			"aliasOf": null
+		},
+		{
+			"key": "uv380",
+			"name": "MD-UV380",
+			"manufacturer": "TyT",
+			"enum": "UV380",
+			"aliasOf": "uv390"
+		},
+		{
+			"key": "uv390",
+			"name": "MD-UV390",
+			"manufacturer": "TyT",
+			"enum": "UV390",
+			"aliasOf": null
+		}
+	]
+}

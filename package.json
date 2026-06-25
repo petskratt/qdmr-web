@@ -1,0 +1,39 @@
+{
+  "name": "qdmr-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "gen:radios": "node scripts/gen-radios.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@sveltejs/adapter-static": "^3.0.10",
+    "@sveltejs/kit": "^2.68.0",
+    "@sveltejs/vite-plugin-svelte": "^7.1.2",
+    "@types/node": "^26.0.1",
+    "@types/papaparse": "^5.5.2",
+    "sass-embedded": "^1.100.0",
+    "svelte": "^5.56.4",
+    "svelte-check": "^4.7.1",
+    "typescript": "^6.0.3",
+    "vite": "^8.1.0",
+    "vitest": "^4.1.9"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1",
+    "idb-keyval": "^6.2.5",
+    "nanoid": "^5.1.16",
+    "papaparse": "^5.5.4",
+    "yaml": "^2.9.0"
+  }
+}
