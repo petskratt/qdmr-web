@@ -1,0 +1,3958 @@
+---
+version: 0.14.1
+settings:
+  introLine1: ES1KRT
+  introLine2: EE MIX
+  micLevel: 3
+  speech: false
+  power: High
+  squelch: 3
+  vox: off
+  defaultID: id1
+  gnss:
+    fixedPositionEnabled: true
+    fixedPosition: JJ00aa00
+    systems:
+      - GPS
+    units: Metric
+  dmr:
+    privateCallMatch: true
+    groupCallMatch: true
+    privateCallHangTime: 10 s
+    groupCallHangTime: 10 s
+    sendTalkerAlias: true
+    talkerAliasEncoding: Iso8
+    preamble: 100 ms
+  anytone:
+    subChannel: true
+    selectedVFO: A
+    modeA: VFO
+    modeB: Memory
+    vfoScanType: Time
+    minVFOScanFrequencyUHF: 400 MHz
+    maxVFOScanFrequencyUHF: 480 MHz
+    minVFOScanFrequencyVHF: 136 MHz
+    maxVFOScanFrequencyVHF: 174 MHz
+    keepLastCaller: true
+    vfoStep: 12.5 kHz
+    steType: Silent
+    steFrequency: 259.19999999999999
+    steDuration: 260 ms
+    tbstFrequency: 1750 Hz
+    proMode: false
+    maintainCallChannel: false
+    fan: Temperature
+    bootSettings:
+      bootDisplay: CustomText
+      bootPasswordEnabled: false
+      bootPassword: 12345678
+      defaultChannel: true
+      zoneA: zone1
+      channelA: ch10
+      zoneB: zone3
+      channelB: ch49
+      priorityZoneA: zone1
+      priorityZoneB: zone5
+      gpsCheck: false
+      reset: true
+    powerSaveSettings:
+      autoShutdown: 0
+      resetAutoShutdownOnCall: false
+      powerSave: Save50
+      atpc: false
+    keySettings:
+      funcKey1Short: ToggleMainChannel
+      funcKey1Long: Off
+      funcKey2Short: ToggleVFO
+      funcKey2Long: ChannelType
+      funcKey3Short: Power
+      funcKey3Long: Record
+      funcKey4Short: Repeater
+      funcKey4Long: SMS
+      funcKey5Short: Reverse
+      funcKey5Long: Dial
+      funcKey6Short: Encryption
+      funcKey6Long: Off
+      funcKeyAShort: Monitor
+      funcKeyALong: Off
+      funcKeyBShort: DMRMonitor
+      funcKeyBLong: Off
+      funcKeyCShort: Power
+      funcKeyCLong: Off
+      funcKeyDShort: Off
+      funcKeyDLong: Off
+      funcKnobShort: Off
+      funcKnobLong: Off
+      longPressDuration: 1 s
+      upDownKeys: Channel
+      autoKeyLock: false
+      knobLock: false
+      keypadLock: false
+      sideKeysLock: false
+      forcedKeyLock: false
+    toneSettings:
+      keyTone: false
+      keyToneLevel: 0
+      smsAlert: true
+      callAlert: true
+      dmrTalkPermit: true
+      dmrReset: false
+      fmTalkPermit: true
+      dmrIdle: true
+      fmIdle: false
+      startup: false
+      tot: false
+      wxAlarm: false
+      callMelody:
+        bpm: 100
+        melody: b16 r fis r r
+      idleMelody:
+        bpm: 100
+        melody: fis''16 r r r r
+      resetMelody:
+        bpm: 100
+        melody: fis''16 r fis r fis
+      callEndMelody:
+        bpm: 100
+        melody: fis''16 r fis r fis
+    displaySettings:
+      displayFrequency: false
+      brightness: 5
+      backlightDuration: infinite
+      backlightDurationTX: 30 s
+      backlightDurationRX: infinite
+      customChannelBackground: false
+      volumeChangePrompt: true
+      callEndPrompt: false
+      showClock: true
+      showCall: false
+      showContact: false
+      showChannelNumber: true
+      showGLobalChannelNumber: false
+      showColorCode: true
+      showTimeSlot: true
+      showChannelType: true
+      showLastHeard: true
+      lastCallerDisplay: Both
+      callColor: Turquoise
+      standbyTextColor: Orange
+      standbyBackgroundColor: Black
+      channelNameColor: White
+      channelBNameColor: White
+      zoneNameColor: Green
+      zoneBNameColor: Yellow
+      language: English
+      dateFormat: YearFirst
+    audioSettings:
+      voxDelay: 0
+      voxSource: Both
+      recording: false
+      enhance: false
+      muteDelay: 1 min
+      maxVolume: 10
+      maxHeadPhoneVolume: 3
+      fmMicGain: 1
+      speaker: Radio
+      handsetSpeaker: MainChannel
+      handsetType: Anytone
+    menuSettings:
+      duration: 30 s
+      separator: false
+    autoRepeaterSettings:
+      directionA: Off
+      directionB: Off
+      vhfMin: 145.55 MHz
+      vhfMax: 145.8 MHz
+      uhfMin: 438 MHz
+      uhfMax: 439.6 MHz
+      vhf2Min: 136 MHz
+      vhf2Max: 136 MHz
+      uhf2Min: 400 MHz
+      uhf2Max: 400 MHz
+      offsets:
+        - id: off1
+          name: 7600 kHz offset
+          offset: 7600 kHz
+        - id: off2
+          name: 1600 kHz offset
+          offset: 1600 kHz
+        - id: off3
+          name: 600 kHz offset
+          offset: 600 kHz
+    dmrSettings:
+      manualGroupCallHangTime: 0
+      manualPrivateCallHangTime: 0
+      wakeHeadPeriod: 40 ms
+      filterOwnID: true
+      monitorSlotMatch: Single
+      monitorColorCodeMatch: false
+      monitorIDMatch: false
+      monitorTimeSlotHold: false
+      talkerAliasSource: UserDB
+      encryption: AES
+    gpsSettings:
+      timeZone: UTC+09:00
+      reportPosition: true
+      updatePeriod: 255 s
+    roamingSettings:
+      autoRoam: false
+      autoRoamPeriod: 3 min
+      autoRoamDelay: 2 s
+      roamStart: OutOfRange
+      roamReturn: Periodic
+      rangeCheck: false
+      checkInterval: 5 s
+      retryCount: 2
+      outOfRangeAlert: None
+      notification: false
+      notificationCount: 1
+      gpsRoaming: false
+    bluetoothSettings:
+      enabled: false
+      pttLatch: false
+      pttSleepTimer: 0
+      internalMic: false
+      internalSpeaker: false
+      micGain: 0
+      speakerGain: 0
+      hold: 0
+      holdDelay: 0
+      handset:
+        shutdown: true
+        volumeLevelA: 0
+        volumeLevelB: 0
+        micGain: 1
+        squelch: 1
+        txNoiseReduction: 10
+        voxLevel: 0
+        voxDelay: 0
+        funcKeyAShort: Off
+        funcKeyBShort: Off
+        funcKeyCShort: Off
+        funcKeyALong: Off
+        funcKeyBLong: Off
+        funcKeyCLong: Off
+        funcKeyAVeryLong: Off
+        funcKeyBVeryLong: Off
+        funcKeyCVeryLong: Off
+        backlight: 30 s
+    repeaterSettings:
+      enabled: false
+      monitor: false
+      timeSlot: Channel
+      secTimeSlot: Channel
+      colorCode: Ignored
+    satelliteSettings:
+      power: High
+      squelch: 0
+  tot: 3 min
+radioIDs:
+  - dmr: {id: id1, name: ES1KRT, number: 2480138}
+contacts:
+  - dmr: {id: cont1, name: xxx, ring: false, type: PrivateCall, number: 4000, anytone: {alertType: None}}
+  - dmr: {id: cont2, name: Finland 244, ring: false, type: GroupCall, number: 244, anytone: {alertType: None}}
+  - dmr: {id: cont3, name: Estonia 248, ring: false, type: GroupCall, number: 248, anytone: {alertType: None}}
+  - dmr: {id: cont4, name: Fin Uusimaa 2442, ring: false, type: GroupCall, number: 2442, anytone: {alertType: None}}
+  - dmr: {id: cont5, name: Fin OH2 I-Uusim, ring: false, type: GroupCall, number: 24423, anytone: {alertType: None}}
+  - dmr: {id: cont6, name: DigitalAPRS, ring: false, type: GroupCall, number: 244999, anytone: {alertType: None}}
+  - dmr: {id: cont7, name: DMO, ring: false, type: GroupCall, number: 99, anytone: {alertType: None}}
+  - dmr: {id: cont8, name: Local 9, ring: false, type: GroupCall, number: 9, anytone: {alertType: None}}
+  - dmr: {id: cont9, name: WorldWide 91, ring: false, type: GroupCall, number: 91, anytone: {alertType: None}}
+  - dmr: {id: cont10, name: Europe 92, ring: false, type: GroupCall, number: 92, anytone: {alertType: None}}
+  - dmr: {id: cont11, name: Ukraine, ring: false, type: GroupCall, number: 2551, anytone: {alertType: None}}
+  - dmr: {id: cont12, name: Russia 1, ring: false, type: GroupCall, number: 2501, anytone: {alertType: None}}
+  - dmr: {id: cont13, name: Russia 2, ring: false, type: GroupCall, number: 2502, anytone: {alertType: None}}
+  - dmr: {id: cont14, name: 24871, ring: false, type: GroupCall, number: 24871, anytone: {alertType: None}}
+  - dmr: {id: cont15, name: Narva 24804, ring: false, type: GroupCall, number: 24804, anytone: {alertType: None}}
+  - dmr: {id: cont16, name: Narva 24814, ring: false, type: GroupCall, number: 24814, anytone: {alertType: None}}
+  - dmr: {id: cont17, name: Tartu 2485, ring: false, type: GroupCall, number: 2485, anytone: {alertType: None}}
+  - dmr: {id: cont18, name: Tallinn 2481, ring: false, type: GroupCall, number: 2481, anytone: {alertType: None}}
+  - dmr: {id: cont19, name: Narva 2484, ring: false, type: GroupCall, number: 2484, anytone: {alertType: None}}
+  - dmr: {id: cont20, name: 4000, ring: false, type: GroupCall, number: 4000, anytone: {alertType: None}}
+  - dmr: {id: cont21, name: ADN 8248, ring: false, type: GroupCall, number: 8000248, anytone: {alertType: None}}
+  - dmr: {id: cont22, name: Parrot US 310997, ring: false, type: PrivateCall, number: 310997, anytone: {alertType: None}}
+  - dmr: {id: cont23, name: Parrot 9990, ring: false, type: PrivateCall, number: 9990, anytone: {alertType: None}}
+  - dmr: {id: cont24, name: Parrot FI 244997, ring: false, type: PrivateCall, number: 244997, anytone: {alertType: None}}
+  - dmr: {id: cont25, name: Radio Test, ring: false, type: GroupCall, number: 98, anytone: {alertType: None}}
+  - dtmf: {id: cont26, name: Contact1, ring: false, number: 12345}
+  - dmr: {id: cont27, name: "GPS #1 Contact", ring: false, type: PrivateCall, number: 262999}
+  - dmr: {id: cont28, name: "GPS #2 Contact", ring: false, type: PrivateCall, number: 204999}
+  - dmr: {id: cont29, name: "GPS #3 Contact", ring: false, type: PrivateCall, number: 208999}
+  - dmr: {id: cont30, name: "GPS #4 Contact", ring: false, type: PrivateCall, number: 310999}
+groupLists:
+  - {id: grp1, name: dummy, contacts: []}
+channels:
+  - fm:
+      id: ch1
+      name: TARTU 2m
+      rxFrequency: 145.65 MHz
+      txFrequency: 145.05 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone:
+        ctcss: 77.0 Hz
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch2
+      name: Tartu 70cm
+      rxFrequency: 434.625 MHz
+      txFrequency: 433.025 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - dmr:
+      id: ch3
+      name: TARTU D248Ts2
+      rxFrequency: 439.3 MHz
+      txFrequency: 431.7 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      admit: ColorCode
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      contact: cont3
+      roaming: !<!default> ""
+      extended:
+        talkaround: false
+        privateCallConfirm: false
+        sms: true
+        smsConfirm: false
+        dataConfirm: false
+        dcdm: false
+        loneWorker: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        adaptiveTDMA: false
+        throughMode: false
+      power: High
+  - dmr:
+      id: ch4
+      name: ES/OH2LAK/R
+      rxFrequency: 434.5125 MHz
+      txFrequency: 432.5125 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      roaming: !<!default> ""
+      extended:
+        talkaround: false
+        privateCallConfirm: false
+        sms: true
+        smsConfirm: false
+        dataConfirm: false
+        dcdm: false
+        loneWorker: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        adaptiveTDMA: false
+        throughMode: false
+      power: Low
+  - dmr:
+      id: ch5
+      name: TARTU DMR S2
+      rxFrequency: 438.975 MHz
+      txFrequency: 431.375 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      contact: cont3
+      aprs: aprs4
+      roaming: !<!default> ""
+      extended:
+        talkaround: false
+        privateCallConfirm: false
+        sms: true
+        smsConfirm: false
+        dataConfirm: true
+        dcdm: false
+        loneWorker: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        adaptiveTDMA: false
+        throughMode: false
+      power: Mid
+  - dmr:
+      id: ch6
+      name: DMR TLN S1
+      rxFrequency: 434.5875 MHz
+      txFrequency: 432.5875 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      admit: ColorCode
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      roaming: !<!default> ""
+      extended:
+        talkaround: false
+        privateCallConfirm: false
+        sms: true
+        smsConfirm: false
+        dataConfirm: true
+        dcdm: false
+        loneWorker: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        adaptiveTDMA: false
+        throughMode: false
+      power: Mid
+  - fm:
+      id: ch7
+      name: 433.400
+      rxFrequency: 433.4 MHz
+      txFrequency: 433.4 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone:
+        ctcss: 77.0 Hz
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Low
+  - dmr:
+      id: ch8
+      name: DR TLN 2m
+      rxFrequency: 145.775 MHz
+      txFrequency: 145.175 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      aprs: aprs1
+      roaming: !<!default> ""
+      extended:
+        talkaround: false
+        privateCallConfirm: false
+        sms: true
+        smsConfirm: false
+        dataConfirm: true
+        dcdm: false
+        loneWorker: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        adaptiveTDMA: false
+        throughMode: false
+      power: Max
+  - fm:
+      id: ch9
+      name: DR/Fm TLN 2m
+      rxFrequency: 145.775 MHz
+      txFrequency: 145.175 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone:
+        ctcss: 82.5 Hz
+      txTone:
+        ctcss: 82.5 Hz
+      bandwidth: Narrow
+      aprs: aprs1
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: SubTone
+        scramblerFrequency: 0 Hz
+      power: Max
+  - dmr:
+      id: ch10
+      name: HS Est 248
+      rxFrequency: 434.525 MHz
+      txFrequency: 432.525 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      contact: cont3
+      roaming: !<!default> ""
+      extended:
+        talkaround: false
+        privateCallConfirm: false
+        sms: true
+        smsConfirm: false
+        dataConfirm: false
+        dcdm: false
+        loneWorker: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        adaptiveTDMA: false
+        throughMode: false
+      power: Low
+  - dmr:
+      id: ch11
+      name: HS Fin 244
+      rxFrequency: 434.525 MHz
+      txFrequency: 432.525 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      contact: cont2
+      aprs: aprs1
+      roaming: !<!default> ""
+      extended:
+        talkaround: false
+        privateCallConfirm: false
+        sms: true
+        smsConfirm: false
+        dataConfirm: false
+        dcdm: false
+        loneWorker: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Start
+        adaptiveTDMA: false
+        throughMode: false
+      power: Low
+  - dmr:
+      id: ch12
+      name: HS Fin 2442 Uusi
+      rxFrequency: 434.525 MHz
+      txFrequency: 432.525 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      contact: cont4
+      aprs: aprs1
+      roaming: !<!default> ""
+      extended:
+        talkaround: false
+        privateCallConfirm: false
+        sms: true
+        smsConfirm: false
+        dataConfirm: false
+        dcdm: false
+        loneWorker: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Start
+        adaptiveTDMA: false
+        throughMode: false
+      power: Low
+  - dmr:
+      id: ch13
+      name: HS OH2 I-Uusimaa
+      rxFrequency: 434.525 MHz
+      txFrequency: 432.525 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      contact: cont5
+      aprs: aprs1
+      roaming: !<!default> ""
+      extended:
+        talkaround: false
+        privateCallConfirm: false
+        sms: true
+        smsConfirm: false
+        dataConfirm: false
+        dcdm: false
+        loneWorker: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Start
+        adaptiveTDMA: false
+        throughMode: false
+      power: Low
+  - dmr:
+      id: ch14
+      name: HS Eur 92
+      rxFrequency: 434.525 MHz
+      txFrequency: 432.525 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      contact: cont10
+      roaming: !<!default> ""
+      extended:
+        talkaround: false
+        privateCallConfirm: false
+        sms: true
+        smsConfirm: false
+        dataConfirm: true
+        dcdm: false
+        loneWorker: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        adaptiveTDMA: false
+        throughMode: false
+      power: Low
+  - dmr:
+      id: ch15
+      name: HS World 91
+      rxFrequency: 434.525 MHz
+      txFrequency: 432.525 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      contact: cont9
+      roaming: !<!default> ""
+      extended:
+        talkaround: false
+        privateCallConfirm: false
+        sms: true
+        smsConfirm: false
+        dataConfirm: true
+        dcdm: false
+        loneWorker: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        adaptiveTDMA: false
+        throughMode: false
+      power: Low
+  - dmr:
+      id: ch16
+      name: HS Parrot 310997
+      rxFrequency: 434.525 MHz
+      txFrequency: 432.525 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      contact: cont22
+      roaming: !<!default> ""
+      extended:
+        talkaround: false
+        privateCallConfirm: false
+        sms: true
+        smsConfirm: false
+        dataConfirm: true
+        dcdm: false
+        loneWorker: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        adaptiveTDMA: false
+        throughMode: false
+      power: Low
+  - dmr:
+      id: ch17
+      name: HS Parrot 9990
+      rxFrequency: 434.525 MHz
+      txFrequency: 432.525 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      contact: cont23
+      roaming: !<!default> ""
+      extended:
+        talkaround: false
+        privateCallConfirm: false
+        sms: true
+        smsConfirm: false
+        dataConfirm: true
+        dcdm: false
+        loneWorker: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        adaptiveTDMA: false
+        throughMode: false
+      power: Low
+  - dmr:
+      id: ch18
+      name: HS Parrot 244997
+      rxFrequency: 434.525 MHz
+      txFrequency: 432.525 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      contact: cont24
+      roaming: !<!default> ""
+      extended:
+        talkaround: false
+        privateCallConfirm: false
+        sms: true
+        smsConfirm: false
+        dataConfirm: true
+        dcdm: false
+        loneWorker: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        adaptiveTDMA: false
+        throughMode: false
+      power: Low
+  - dmr:
+      id: ch19
+      name: HS Radio Test 98
+      rxFrequency: 434.525 MHz
+      txFrequency: 432.525 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      contact: cont25
+      roaming: !<!default> ""
+      extended:
+        talkaround: false
+        privateCallConfirm: false
+        sms: true
+        smsConfirm: false
+        dataConfirm: true
+        dcdm: false
+        loneWorker: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        adaptiveTDMA: false
+        throughMode: false
+      power: Low
+  - fm:
+      id: ch20
+      name: AR70EstTallPpk
+      rxFrequency: 446.155 MHz
+      txFrequency: 446.155 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone:
+        ctcss: 136.5 Hz
+      bandwidth: Narrow
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Low
+  - fm:
+      id: ch21
+      name: AR70EstSaare1750
+      rxFrequency: 434.6 MHz
+      txFrequency: 433 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch22
+      name: AR2EstTallin1750
+      rxFrequency: 145.775 MHz
+      txFrequency: 145.175 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      aprs: aprs1
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch23
+      name: AR2EstTamsalu
+      rxFrequency: 145.7 MHz
+      txFrequency: 145.1 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone:
+        ctcss: 82.5 Hz
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch24
+      name: AR2EstSaarem1750
+      rxFrequency: 145.6 MHz
+      txFrequency: 145 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch25
+      name: SR ISS NA1SS
+      rxFrequency: 437.8 MHz
+      txFrequency: 145.99 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone:
+        ctcss: 67.0 Hz
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch26
+      name: SR SO-50
+      rxFrequency: 145.85 MHz
+      txFrequency: 436.795 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone:
+        ctcss: 67.0 Hz
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch27
+      name: SR AO-91
+      rxFrequency: 145.96 MHz
+      txFrequency: 435.25 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone:
+        ctcss: 67.0 Hz
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch28
+      name: SR PO-101
+      rxFrequency: 145.9 MHz
+      txFrequency: 437.5 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone:
+        ctcss: 141.3 Hz
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch29
+      name: U272 433.400
+      rxFrequency: 433.4 MHz
+      txFrequency: 433.4 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch30
+      name: U274 433.425
+      rxFrequency: 433.425 MHz
+      txFrequency: 433.425 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch31
+      name: U276 433.450
+      rxFrequency: 433.45 MHz
+      txFrequency: 433.45 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch32
+      name: U278 433.475
+      rxFrequency: 433.475 MHz
+      txFrequency: 433.475 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch33
+      name: KU280 433.500
+      rxFrequency: 433.5 MHz
+      txFrequency: 433.5 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch34
+      name: U282 433.525
+      rxFrequency: 433.425 MHz
+      txFrequency: 433.425 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch35
+      name: U284 433.550
+      rxFrequency: 433.55 MHz
+      txFrequency: 433.55 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch36
+      name: U286 433.575
+      rxFrequency: 433.575 MHz
+      txFrequency: 433.575 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch37
+      name: V16 145.200
+      rxFrequency: 145.2 MHz
+      txFrequency: 145.2 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch38
+      name: V18 145.225
+      rxFrequency: 145.225 MHz
+      txFrequency: 145.225 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch39
+      name: V20 145.250
+      rxFrequency: 145.25 MHz
+      txFrequency: 145.25 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch40
+      name: V22 145.275
+      rxFrequency: 145.275 MHz
+      txFrequency: 145.275 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch41
+      name: V24 145.300
+      rxFrequency: 145.3 MHz
+      txFrequency: 145.3 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch42
+      name: V26 145.325
+      rxFrequency: 145.325 MHz
+      txFrequency: 145.325 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch43
+      name: V28 145.350
+      rxFrequency: 145.35 MHz
+      txFrequency: 145.35 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Low
+  - fm:
+      id: ch44
+      name: V30 145.375
+      rxFrequency: 145.375 MHz
+      txFrequency: 145.375 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch45
+      name: V32 145.400
+      rxFrequency: 145.4 MHz
+      txFrequency: 145.4 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch46
+      name: V34 145.425
+      rxFrequency: 145.425 MHz
+      txFrequency: 145.425 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch47
+      name: V36 145.450
+      rxFrequency: 145.45 MHz
+      txFrequency: 145.45 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch48
+      name: V38 145.475
+      rxFrequency: 145.475 MHz
+      txFrequency: 145.475 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch49
+      name: KV40 145.500
+      rxFrequency: 145.5 MHz
+      txFrequency: 145.5 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      aprs: aprs1
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Start
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Low
+  - fm:
+      id: ch50
+      name: V42 145.525
+      rxFrequency: 145.525 MHz
+      txFrequency: 145.525 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch51
+      name: V44 145.550
+      rxFrequency: 145.55 MHz
+      txFrequency: 145.55 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch52
+      name: V46 145.575
+      rxFrequency: 145.575 MHz
+      txFrequency: 145.575 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch53
+      name: JAHT 1
+      rxFrequency: 146.15 MHz
+      txFrequency: 146.15 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: true
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch54
+      name: JAHT 2
+      rxFrequency: 161.475 MHz
+      txFrequency: 161.475 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: true
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Low
+  - fm:
+      id: ch55
+      name: JAHT 3
+      rxFrequency: 146.4 MHz
+      txFrequency: 146.4 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: true
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Low
+  - fm:
+      id: ch56
+      name: Jaht Rakvere
+      rxFrequency: 161.375 MHz
+      txFrequency: 161.375 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: true
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch57
+      name: PMR 01
+      rxFrequency: 446.00625 MHz
+      txFrequency: 446.00625 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Narrow
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Low
+  - fm:
+      id: ch58
+      name: PMR 02
+      rxFrequency: 446.01875 MHz
+      txFrequency: 446.01875 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Narrow
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Low
+  - fm:
+      id: ch59
+      name: PMR 03
+      rxFrequency: 446.03125 MHz
+      txFrequency: 446.03125 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Narrow
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Low
+  - fm:
+      id: ch60
+      name: PMR 04
+      rxFrequency: 446.04375 MHz
+      txFrequency: 446.04375 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Narrow
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Low
+  - fm:
+      id: ch61
+      name: PMR 05
+      rxFrequency: 446.05625 MHz
+      txFrequency: 446.05625 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Narrow
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Low
+  - fm:
+      id: ch62
+      name: PMR 06
+      rxFrequency: 446.06875 MHz
+      txFrequency: 446.06875 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Narrow
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Low
+  - fm:
+      id: ch63
+      name: PMR 07
+      rxFrequency: 446.08125 MHz
+      txFrequency: 446.08125 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Narrow
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Low
+  - fm:
+      id: ch64
+      name: PMR 08
+      rxFrequency: 446.09375 MHz
+      txFrequency: 446.09375 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Narrow
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Low
+  - dmr:
+      id: ch65
+      name: PMR 09
+      rxFrequency: 446.10625 MHz
+      txFrequency: 446.10625 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      contact: cont1
+      roaming: !<!default> ""
+      extended:
+        talkaround: false
+        privateCallConfirm: false
+        sms: true
+        smsConfirm: false
+        dataConfirm: true
+        dcdm: false
+        loneWorker: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        adaptiveTDMA: false
+        throughMode: true
+      power: Mid
+  - fm:
+      id: ch66
+      name: PMR 10
+      rxFrequency: 446.11875 MHz
+      txFrequency: 446.11875 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Narrow
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Low
+  - fm:
+      id: ch67
+      name: PMR 11
+      rxFrequency: 446.13125 MHz
+      txFrequency: 446.13125 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Narrow
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Low
+  - fm:
+      id: ch68
+      name: PMR 12
+      rxFrequency: 446.14375 MHz
+      txFrequency: 446.14375 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Narrow
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Low
+  - fm:
+      id: ch69
+      name: PMR 13
+      rxFrequency: 446.15625 MHz
+      txFrequency: 446.15625 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Narrow
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Low
+  - fm:
+      id: ch70
+      name: PMR 14
+      rxFrequency: 446.16875 MHz
+      txFrequency: 446.16875 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Narrow
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Low
+  - fm:
+      id: ch71
+      name: PMR 15
+      rxFrequency: 446.18125 MHz
+      txFrequency: 446.18125 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Narrow
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Low
+  - fm:
+      id: ch72
+      name: PMR 16
+      rxFrequency: 446.19375 MHz
+      txFrequency: 446.19375 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Narrow
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Low
+  - fm:
+      id: ch73
+      name: SEA 01
+      rxFrequency: 160.65 MHz
+      txFrequency: 156.05 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch74
+      name: SEA 02
+      rxFrequency: 160.7 MHz
+      txFrequency: 156.1 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch75
+      name: SEA 03
+      rxFrequency: 160.75 MHz
+      txFrequency: 156.15 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch76
+      name: SEA 04
+      rxFrequency: 160.8 MHz
+      txFrequency: 156.2 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch77
+      name: SEA 05
+      rxFrequency: 160.85 MHz
+      txFrequency: 156.25 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch78
+      name: SEA 06
+      rxFrequency: 156.3 MHz
+      txFrequency: 156.3 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch79
+      name: SEA 07
+      rxFrequency: 160.95 MHz
+      txFrequency: 156.35 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch80
+      name: SEA 08
+      rxFrequency: 156.4 MHz
+      txFrequency: 156.4 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch81
+      name: SEA 09
+      rxFrequency: 156.45 MHz
+      txFrequency: 156.45 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch82
+      name: SEA 10
+      rxFrequency: 156.5 MHz
+      txFrequency: 156.5 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch83
+      name: SEA 11
+      rxFrequency: 156.55 MHz
+      txFrequency: 156.55 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch84
+      name: SEA 12
+      rxFrequency: 156.6 MHz
+      txFrequency: 156.6 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch85
+      name: SEA 13
+      rxFrequency: 156.65 MHz
+      txFrequency: 156.65 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch86
+      name: SEA 14
+      rxFrequency: 156.7 MHz
+      txFrequency: 156.7 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch87
+      name: SEA 15
+      rxFrequency: 156.75 MHz
+      txFrequency: 156.75 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch88
+      name: SEA 16
+      rxFrequency: 156.8 MHz
+      txFrequency: 156.8 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch89
+      name: SEA 17
+      rxFrequency: 156.85 MHz
+      txFrequency: 156.85 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch90
+      name: SEA 18
+      rxFrequency: 161.5 MHz
+      txFrequency: 156.9 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch91
+      name: SEA 19
+      rxFrequency: 161.55 MHz
+      txFrequency: 156.95 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch92
+      name: SEA 20
+      rxFrequency: 161.6 MHz
+      txFrequency: 157 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch93
+      name: SEA 21
+      rxFrequency: 161.65 MHz
+      txFrequency: 157.05 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch94
+      name: SEA 22
+      rxFrequency: 161.7 MHz
+      txFrequency: 157.1 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch95
+      name: SEA 23
+      rxFrequency: 161.75 MHz
+      txFrequency: 157.15 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch96
+      name: SEA 24
+      rxFrequency: 161.8 MHz
+      txFrequency: 157.2 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch97
+      name: SEA 25
+      rxFrequency: 161.85 MHz
+      txFrequency: 157.25 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch98
+      name: SEA 26
+      rxFrequency: 161.9 MHz
+      txFrequency: 157.3 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch99
+      name: SEA 27
+      rxFrequency: 161.95 MHz
+      txFrequency: 157.35 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch100
+      name: SEA 28
+      rxFrequency: 162 MHz
+      txFrequency: 157.4 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch101
+      name: SEA 60
+      rxFrequency: 160.625 MHz
+      txFrequency: 156.025 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch102
+      name: SEA 61
+      rxFrequency: 160.675 MHz
+      txFrequency: 156.075 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch103
+      name: SEA 62
+      rxFrequency: 160.725 MHz
+      txFrequency: 156.125 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch104
+      name: SEA 63
+      rxFrequency: 160.775 MHz
+      txFrequency: 156.175 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch105
+      name: SEA 64
+      rxFrequency: 160.825 MHz
+      txFrequency: 156.225 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch106
+      name: SEA 65
+      rxFrequency: 160.875 MHz
+      txFrequency: 156.275 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch107
+      name: SEA 66
+      rxFrequency: 160.925 MHz
+      txFrequency: 156.325 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch108
+      name: SEA 67
+      rxFrequency: 156.375 MHz
+      txFrequency: 156.375 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch109
+      name: SEA 68
+      rxFrequency: 156.425 MHz
+      txFrequency: 156.425 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch110
+      name: SEA 69
+      rxFrequency: 156.475 MHz
+      txFrequency: 156.475 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch111
+      name: SEA 70
+      rxFrequency: 156.525 MHz
+      txFrequency: 156.525 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch112
+      name: SEA 71
+      rxFrequency: 156.575 MHz
+      txFrequency: 156.575 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch113
+      name: SEA 72
+      rxFrequency: 156.625 MHz
+      txFrequency: 156.625 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch114
+      name: SEA 73
+      rxFrequency: 156.675 MHz
+      txFrequency: 156.675 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch115
+      name: SEA 74
+      rxFrequency: 156.725 MHz
+      txFrequency: 156.725 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch116
+      name: SEA 75
+      rxFrequency: 156.775 MHz
+      txFrequency: 156.775 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch117
+      name: SEA 76
+      rxFrequency: 156.825 MHz
+      txFrequency: 156.825 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch118
+      name: SEA 77
+      rxFrequency: 156.875 MHz
+      txFrequency: 156.875 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch119
+      name: SEA 78
+      rxFrequency: 161.525 MHz
+      txFrequency: 156.925 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch120
+      name: SEA 79
+      rxFrequency: 161.575 MHz
+      txFrequency: 156.975 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch121
+      name: SEA 80
+      rxFrequency: 161.625 MHz
+      txFrequency: 157.025 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch122
+      name: SEA 81
+      rxFrequency: 161.675 MHz
+      txFrequency: 157.075 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch123
+      name: SEA 82
+      rxFrequency: 161.725 MHz
+      txFrequency: 157.125 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch124
+      name: SEA 83
+      rxFrequency: 161.775 MHz
+      txFrequency: 157.175 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch125
+      name: SEA 84
+      rxFrequency: 161.825 MHz
+      txFrequency: 157.225 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch126
+      name: SEA 85
+      rxFrequency: 161.875 MHz
+      txFrequency: 157.275 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch127
+      name: SEA 86
+      rxFrequency: 161.925 MHz
+      txFrequency: 157.325 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch128
+      name: SEA 87
+      rxFrequency: 157.375 MHz
+      txFrequency: 157.375 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch129
+      name: SEA 88
+      rxFrequency: 157.425 MHz
+      txFrequency: 157.425 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 251.09999999999999
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: Max
+  - fm:
+      id: ch130
+      name: APRS Channel
+      rxFrequency: 144.8 MHz
+      txFrequency: 144.8 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Narrow
+      extended:
+        talkaround: false
+        reverseBurst: false
+      power: Max
+zones:
+  - id: zone1
+    name: Hotspot
+    A: [ch10, ch11, ch12, ch13, ch14, ch15]
+    B: []
+    anytone:
+      hidden: false
+  - id: zone2
+    name: Estonia
+    A: [ch20, ch21, ch22, ch23, ch24, ch1, ch2, ch3, ch5, ch6, ch8, ch9]
+    B: []
+    anytone:
+      hidden: false
+  - id: zone3
+    name: VHF Simplex
+    A: [ch37, ch38, ch39, ch40, ch41, ch42, ch43, ch44, ch45, ch46, ch47, ch48, ch49, ch50, ch51, ch52]
+    B: []
+    anytone:
+      hidden: false
+  - id: zone4
+    name: UHF Simplex
+    A: [ch29, ch30, ch31, ch32, ch33, ch34, ch35, ch36]
+    B: []
+    anytone:
+      hidden: false
+  - id: zone5
+    name: Satellite
+    A: [ch25, ch26, ch27, ch28]
+    B: []
+    anytone:
+      hidden: false
+  - id: zone6
+    name: Jaht
+    A: [ch53, ch54, ch55, ch56]
+    B: []
+    anytone:
+      hidden: false
+  - id: zone7
+    name: PMR 446
+    A: [ch57, ch58, ch59, ch60, ch61, ch62, ch63, ch64, ch65, ch66, ch67, ch68, ch69, ch70, ch71, ch72]
+    B: []
+    anytone:
+      hidden: false
+  - id: zone8
+    name: Marine VHF
+    A: [ch73, ch74, ch75, ch76, ch77, ch78, ch79, ch80, ch81, ch82, ch83, ch84, ch85, ch86, ch87, ch88, ch89, ch90, ch91, ch92, ch93, ch94, ch95, ch96, ch97, ch98, ch99, ch100, ch101, ch102, ch103, ch104, ch105, ch106, ch107, ch108, ch109, ch110, ch111, ch112, ch113, ch114, ch115, ch116, ch117, ch118, ch119, ch120, ch121, ch122, ch123, ch124, ch125, ch126, ch127, ch128, ch129]
+    B: []
+    anytone:
+      hidden: false
+  - id: zone9
+    name: Hotspot Parrots
+    A: [ch16, ch17, ch19]
+    B: []
+    anytone:
+      hidden: false
+positioning:
+  - aprs:
+      id: aprs1
+      name: APRS APAT81
+      revert: ch130
+      icon: Jogger
+      message: AnyTone D878UVII Plus
+      anytone:
+        txDelay: 60 ms
+        preWaveDelay: 600 ms
+        passAll: false
+        reportPosition: true
+        reportMicE: true
+        reportObject: true
+        reportItem: true
+        reportMessage: true
+        reportWeather: true
+        reportNMEA: true
+        reportStatus: true
+        reportOther: true
+        frequencies:
+          - id: af1
+            name: APRS 1
+            frequency: 430.5125 MHz
+          - id: af2
+            name: APRS 2
+            frequency: 145.825 MHz
+      destination: APAT81-0
+      source: UWCALL-7
+      path: [WIDE1-1, WIDE2-2]
+  - dmr:
+      id: aprs2
+      name: "GPS Sys #1"
+      contact: cont27
+      revert: !<!selected> ""
+  - dmr:
+      id: aprs3
+      name: "GPS Sys #2"
+      contact: cont28
+      revert: !<!selected> ""
+  - dmr:
+      id: aprs4
+      name: "GPS Sys #3"
+      contact: cont29
+      revert: !<!selected> ""
+  - dmr:
+      id: aprs5
+      name: "GPS Sys #4"
+      contact: cont30
+      revert: !<!selected> ""
+commercial:
+  encryptionKeys:
+    - dmr:
+        id: key1
+        name: Basic Key 0
+        key: 0101
+    - dmr:
+        id: key2
+        name: Basic Key 1
+        key: 0202
+    - dmr:
+        id: key3
+        name: Basic Key 2
+        key: 0303
+    - dmr:
+        id: key4
+        name: Basic Key 3
+        key: 0404
+    - dmr:
+        id: key5
+        name: Basic Key 4
+        key: 0505
+    - dmr:
+        id: key6
+        name: Basic Key 5
+        key: 0606
+    - dmr:
+        id: key7
+        name: Basic Key 6
+        key: 0707
+    - dmr:
+        id: key8
+        name: Basic Key 7
+        key: 0808
+    - dmr:
+        id: key9
+        name: Basic Key 8
+        key: 0909
+    - dmr:
+        id: key10
+        name: Basic Key 9
+        key: 0a0a
+    - dmr:
+        id: key11
+        name: Basic Key 10
+        key: 0b0b
+    - dmr:
+        id: key12
+        name: Basic Key 11
+        key: 0c0c
+    - dmr:
+        id: key13
+        name: Basic Key 12
+        key: 0d0d
+    - dmr:
+        id: key14
+        name: Basic Key 13
+        key: 0e0e
+    - dmr:
+        id: key15
+        name: Basic Key 14
+        key: 0f0f
+    - dmr:
+        id: key16
+        name: Basic Key 15
+        key: 1010
+    - dmr:
+        id: key17
+        name: Basic Key 16
+        key: 1111
+    - dmr:
+        id: key18
+        name: Basic Key 17
+        key: 1212
+    - dmr:
+        id: key19
+        name: Basic Key 18
+        key: 1313
+    - dmr:
+        id: key20
+        name: Basic Key 19
+        key: 1414
+    - dmr:
+        id: key21
+        name: Basic Key 20
+        key: 1515
+    - dmr:
+        id: key22
+        name: Basic Key 21
+        key: 1616
+    - dmr:
+        id: key23
+        name: Basic Key 22
+        key: 1717
+    - dmr:
+        id: key24
+        name: Basic Key 23
+        key: 1818
+    - dmr:
+        id: key25
+        name: Basic Key 24
+        key: 1919
+    - dmr:
+        id: key26
+        name: Basic Key 25
+        key: 1a1a
+    - dmr:
+        id: key27
+        name: Basic Key 26
+        key: 1b1b
+    - dmr:
+        id: key28
+        name: Basic Key 27
+        key: 1c1c
+    - dmr:
+        id: key29
+        name: Basic Key 28
+        key: 1d1d
+    - dmr:
+        id: key30
+        name: Basic Key 29
+        key: 1e1e
+    - dmr:
+        id: key31
+        name: Basic Key 30
+        key: 1f1f
+    - dmr:
+        id: key32
+        name: Basic Key 31
+        key: 2020
+sms:
+  format: Motorola
+  templates:
+    []
+...

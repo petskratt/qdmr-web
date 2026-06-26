@@ -107,7 +107,9 @@
 		<div class="workspace">
 			<EntitySidebar dataset={active} />
 			<section class="entity-content">
-				<EntityTable dataset={active} />
+				{#key `${active.id}:${workspace.activeCollection}`}
+					<EntityTable dataset={active} />
+				{/key}
 			</section>
 		</div>
 	{:else}

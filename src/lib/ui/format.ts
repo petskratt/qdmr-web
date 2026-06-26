@@ -29,29 +29,3 @@ function isScalar(v: YamlValue): boolean {
 		typeof v === 'boolean'
 	);
 }
-
-/** True for values the simple scalar editor can handle directly. */
-export function isEditableScalar(value: YamlValue | undefined): boolean {
-	return (
-		value === undefined ||
-		value === null ||
-		typeof value === 'string' ||
-		typeof value === 'number' ||
-		typeof value === 'boolean'
-	);
-}
-
-/** Union of field names present across a set of elements, in first-seen order. */
-export function collectFieldNames(records: Record<string, YamlValue>[]): string[] {
-	const seen: string[] = [];
-	const set = new Set<string>();
-	for (const rec of records) {
-		for (const k of Object.keys(rec)) {
-			if (!set.has(k)) {
-				set.add(k);
-				seen.push(k);
-			}
-		}
-	}
-	return seen;
-}
