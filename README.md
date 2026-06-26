@@ -39,13 +39,14 @@ npm run check        # svelte-check / types
 ## Build & deploy (GitHub Pages, /docs)
 
 ```bash
-# BASE_PATH must match the repo path, e.g. https://<user>.github.io/qdmr-web/
-BASE_PATH=/qdmr-web npm run build
+npm run build
 ```
 
-The static site is written to `docs/` (with `.nojekyll`). Point GitHub Pages at
-the `docs/` folder of your default branch. Leave `BASE_PATH` unset when serving
-from a domain root.
+The static site is written to `docs/` (with `.nojekyll`). Asset URLs are
+**relative to `index.html`**, so the same build works unchanged at a domain root,
+at a GitHub Pages project subpath (`https://<user>.github.io/<repo>/`), or even
+opened straight from disk — no `BASE_PATH` needed. Point GitHub Pages at the
+`docs/` folder of your default branch.
 
 ## Update the radio list
 

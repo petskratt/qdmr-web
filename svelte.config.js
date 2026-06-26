@@ -1,25 +1,25 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
-// GitHub Pages serves the app from a subpath (https://user.github.io/<repo>/).
-// Set BASE_PATH at build time (e.g. BASE_PATH=/qdmr-web) so all links resolve.
-// Locally and at the domain root, leave it empty.
-const base = process.env.BASE_PATH ?? '';
-
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	preprocess: vitePreprocess(),
 	kit: {
-		// SPA: prerender the shell, fall back to index.html for client-side routing.
+		// Single-route SPA: prerender `/` to docs/index.html (no fallback page).
+		// The fallback page always emits absolute asset URLs; a prerendered page
+		// honors `paths.relative` below, which is what makes the build portable.
 		adapter: adapter({
 			pages: 'docs',
 			assets: 'docs',
-			fallback: 'index.html',
 			precompress: false,
 			strict: false
 		}),
-		paths: { base },
-		// GitHub Pages does not serve a custom 404; the SPA fallback handles routing.
+		// Emit asset/link URLs relative to index.html (e.g. ./_app/...) instead of
+		// absolute (/_app/...). This makes the docs/ build location-independent: it
+		// works at a domain root, at a GitHub Pages subpath (/<repo>/), or opened
+		// straight from disk, with no BASE_PATH needed. Safe here because the app is
+		// a single-route SPA (no deep links that would break relative resolution).
+		paths: { relative: true },
 		alias: { $lib: 'src/lib' }
 	}
 };

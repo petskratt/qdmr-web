@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+### Build
+
+- `docs/` build now uses asset URLs **relative to index.html** (`paths.relative`)
+  and prerenders the single route instead of emitting an absolute-path SPA
+  fallback. The same build works at a domain root, a GitHub Pages subpath, or
+  opened from disk; `BASE_PATH` is no longer needed.
+
 ### UI iteration: schema-driven editor, sortable tables, bulk actions
 
 - Tables (`src/lib/ui/columns.ts`): per-collection columns; the internal `id` is
